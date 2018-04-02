@@ -1,5 +1,10 @@
 Gem::Specification.new do |s|
-  s.add_runtime_dependency('rmagick')
+  if RUBY_PLATFORM =~ /java/
+    s.platform = 'java'
+    s.add_runtime_dependency('rmagick4j')
+  else
+    s.add_runtime_dependency('rmagick')
+  end
   s.add_runtime_dependency('rfc822')
   s.add_runtime_dependency('unicode_utils')
 

@@ -7,6 +7,6 @@ gem 'unicode_utils'
 group :development, :test do
   gem 'rspec'
   gem 'fastimage'
-  gem 'phashion'
+  # gem 'phashion'
   gem 'pry'
 end
